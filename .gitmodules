@@ -1,0 +1,6 @@
+[submodule "hm64-decomp"]
+	path = hm64-decomp
+	url = https://github.com/harvestwhisperer/hm64-decomp
+[submodule "HarvestMoon64RecompSyms"]
+	path = HarvestMoon64RecompSyms
+	url = https://github.com/HarvestMoon64Recomp/HarvestMoon64RecompSyms

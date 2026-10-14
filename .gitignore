@@ -1,0 +1,12 @@
+*.d
+*.elf
+*.map
+*.o
+*.exe
+*.bin
+
+build/
+/.vs/
+
+thunderstore/*.nrm
+thunderstore/*.zip

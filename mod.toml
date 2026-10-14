@@ -1,0 +1,68 @@
+# Config file for the Tool Target Marker Harvest Moon 64: Recompiled mod.
+
+# Fields that end up in the mod's manifest.
+[manifest]
+
+# Unique ID of this mod. Pick something long enough that it'll never be the same as any other mod.
+# The name displayed in the mod management menu is separate from this so this doesn't need to be human readable.
+id = "hm64_tool_target_marker"
+
+# Version of this mod.
+version = "1.0.0"
+
+# The name that will show up for this mod in the mod menu. This should be human readable.
+display_name = "Tool Target Marker"
+
+# The description that will show up when this mod is displayed in the mod menu. This should be human readable.
+description =  """
+Shows a glowing marker on the ground over the farm tile your currently \
+equipped tool or seeds are aimed at, so it's always clear which tile the \
+sickle, hoe, axe, hammer, watering can or seeds are about to hit."""
+
+# A short description that will show up in this mod's entry in the mod list. This should be human readable and kept short
+# to prevent it from being cut off due to the limited space.
+short_description = "Marks the farm tile your tool is aimed at."
+
+# Authors of this mod.
+authors = [ "montoyaaguirre" ]
+
+# ID of the target recomp game.
+game_id = "hm64"
+
+# Minimum version of the target recomp (e.g. Zelda 64: Recompiled) that this mod can run on.
+minimum_recomp_version = "1.0.0"
+
+# Dependency mods. Each entry is the mod's ID and then an optional minimum version of the dependency mod.
+dependencies = [
+# Example dependency:
+#    "modname:1.0.0"
+]
+
+# Optional dependency mods. This has the same format as `dependencies`, but the game will still start if dependencies in this
+# list aren't present. You can query the presence of a given dependency by using `recomp_is_dependency_met` in recomputils.h.
+# Calling a function imported from an optional dependency that isn't present will trigger an error.
+optional_dependencies = [
+
+]
+
+# Native libraries (e.g. DLLs) and the functions they export.
+native_libraries = [
+# Example native library:
+#    { name = "my_native_library", funcs = ["my_native_library_function"] }
+]
+
+# Inputs to the mod tool.
+[inputs]
+
+# Input elf file to generate a mod from.
+elf_path = "build/mod.elf"
+
+# Output mod filename.
+mod_filename = "hm64_recomp_tool_target_marker"
+
+# Reference symbol files.
+func_reference_syms_file = "HarvestMoon64RecompSyms/hm64.us.syms.toml"
+data_reference_syms_files = [ "HarvestMoon64RecompSyms/hm64.us.datasyms.toml" ]
+
+# Additional files to include in the mod.
+additional_files = [ "thumb.png" ]

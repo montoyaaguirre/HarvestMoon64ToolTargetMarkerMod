@@ -1,0 +1,7 @@
+{
+    "name": "Tool_Target_Marker",
+    "version_number": "1.0.0",
+    "website_url": "https://github.com/montoyaaguirre/HarvestMoon64ToolTargetMarkerMod",
+    "description": "Marks the farm tile your tool is aimed at.",
+    "dependencies": []
+}
